@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Event Registration</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Event</label>
+        <select required>
+            <option value="">Select Event</option>
+            <option>Technical Workshop</option>
+            <option>Cultural Event</option>
+            <option>Sports Event</option>
+            <option>Web Development</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" required>
+
+        <label>Number of Participants</label>
+        <input type="number" min="1" max="10" required>
+
+        <button type="submit">Register Now</button>
+    </form>
+</div>
+
+</body>
+</html>
